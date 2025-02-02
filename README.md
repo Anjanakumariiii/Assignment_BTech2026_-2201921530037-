@@ -6,6 +6,7 @@ The task is to create a class named `Student` that encapsulates the details of a
 
 ## Coding Platform Used
 - C++
+- HACKERANK
 
 ## Approach and Solution Explanation
 1. **Class Definition**: 
@@ -37,65 +38,41 @@ The task is to create a class named `Student` that encapsulates the details of a
    - An object of the `Student` class is created, and the input values are set using the setter methods.
    - Finally, the details are printed using the getter methods and the `to_string()` method.
 
-## Code
-```cpp
-#include <iostream>
+                                                                                                                                                                                                                                                                                                                                   
+                                                         *****ASSIGNMENT  2******                                                                                   ## Problem statement
+     
+ The problem requires implementing a program that reads the scores of multiple students in five subjects, calculates their total scores, and determines how many students have a higher total score than the first student (Kristen).
 
-using namespace std;
+**Coding Platform Used**
 
-class Student {
-    private:
-        int ages, standards;
-        string first, last;
-    public:  
-        void set_age(int age) {
-            ages = age;     
-        }
-        void set_standard(int standard) {
-            standards = standard;
-        }
-        void set_first_name(string first_name) {
-            first = first_name;
-        }
-        void set_last_name(string last_name) {
-            last = last_name;
-        }
-    
-        int get_age() {
-            return ages;     
-        }
-        int get_standard() {
-            return standards;
-        }
-        string get_first_name() {
-            return first;
-        }
-        string get_last_name() {
-            return last;
-        }
-      
-        string to_string() {
-            return std::to_string(ages) + "," + first + "," + last + "," + std::to_string(standards);
-        }
-};
+The solution is implemented in C++ and is designed to run in any standard C++ environmeNT:
 
-int main() {
-    int age, standard;
-    string first_name, last_name;
-    
-    cin >> age >> first_name >> last_name >> standard;
-    
-    Student st;
-    st.set_age(age);
-    st.set_standard(standard);
-    st.set_first_name(first_name);
-    st.set_last_name(last_name);
-    
-    cout << st.get_age() << "\n";
-    cout << st.get_last_name() << ", " << st.get_first_name() << "\n";
-    cout << st.get_standard() << "\n";
-    cout << "\n";
-    cout << st.to_string();
-    
-    return 0;
-}
+HackerRank
+
+
+
+***Approach and Solution Explanation***
+
+Class Implementation:
+
+A Student class is created with a private vector<int> scores to store the scores.
+
+The input() function takes input for five subjects and stores them in the scores vector.
+
+The calculateTotalScore() function iterates through the scores vector to compute and return the total score.
+
+Main Function Execution:
+
+Reads the number of students.
+
+Creates an array of Student objects dynamically.
+
+Calls the input() function for each student to take their scores.
+
+Calculates the total score of the first student (Kristen).
+
+Iterates through the rest of the students to check how many have a higher total score than Kristen.
+
+Prints the count of students who scored higher than Kristen.
+
+                       
